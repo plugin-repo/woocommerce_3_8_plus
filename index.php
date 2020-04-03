@@ -56,7 +56,8 @@ function woocommerce_cms_init() {
             $this->url = '';
             //Gateway specific fields end
 
-            $this->notify_url = str_replace('https:', 'http:', home_url('index.php/checkout/wc-api/WC_cms'));
+          
+            $this->notify_url = home_url('index.php/checkout/wc-api/WC_cms');
             $this->msg['message'] = "";
             $this->msg['class'] = "";
 
@@ -267,7 +268,7 @@ function woocommerce_cms_init() {
 							else if ($order_status === "N") {
                                 $msg['class'] = 'error';
                                 
-                                $order->update_status('failed', __('Payment Delined'));
+                                $order->update_status('failed', __('Payment Declined'));
                                 global $wpdb;
                                 $wpdb->update('wp_cms_tbl', array('order_status' => 'authfailed','tracking_id'=>$trackingid), array('woocommerce_id' => $first));
                                 $woocommerce->cart->empty_cart();

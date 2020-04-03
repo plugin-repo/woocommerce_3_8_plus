@@ -1074,7 +1074,7 @@ function woo_change_order_received_text( $str, $order ) {
 		 $new_str = $str . 'Thank you for shopping with us. However, the transaction is in pending process.';
 	 } */
 	 else{
-		 $new_str = '<span style="padding: 20px; background-color: #ff9800; color: white;"><strong>Thank you for shopping with us. However, the transaction has been cancelled. </strong></span>';
+		 $new_str = '<div style="padding: 5px; background-color: #ff9800; color: white;"><strong>Thank you for shopping with us. However, the transaction has been cancelled. </strong></div>';
 	 } 
 	
 	

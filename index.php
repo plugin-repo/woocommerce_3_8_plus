@@ -114,7 +114,7 @@ function woocommerce_cms_init() {
 				'language' => array(
 					'title' 			=> __('Your Store Language', 'Payment'),
 					'type' 			=> 'select',
-					'options' 		=> array('bg'=>'Bulgarian', 'en'=>'English', 'ja'=>'Japanese'),
+					'options' 		=> array('bg'=>'Bulgarian', 'en'=>'English', 'ja'=>'Japanese', 'ro'=>'Romanian', 'sp'=>'Spanish'),
 					'description' => __('Your Store Language', 'Payment')
 				),
 				
